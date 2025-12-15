@@ -91,10 +91,7 @@ intuitive user interfaces, and role-based access control.
   <em>Model-View-Controller Architecture</em>
 </div>
 
-<p style="line-height:1.6;">
-The MVC architecture separates the system into Model, View, and Controller layers,
-improving maintainability, scalability, and code organization.
-</p>
+
 
 ---
 
@@ -106,10 +103,6 @@ improving maintainability, scalability, and code organization.
   <em>Entity Relationship Diagram (ERD)</em>
 </div>
 
-<p style="line-height:1.6;">
-The database schema supports user authentication, service management,
-transaction processing, and role-based workflows.
-</p>
 
 ---
 
