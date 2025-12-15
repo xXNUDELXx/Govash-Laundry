@@ -1,202 +1,142 @@
-🧺 GOVLASH Laundry Management System
+<div align="center">
 
-A JavaFX-based laundry management application with role-based access control and MySQL integration.
+# 🧺 <span style="font-size:34px; font-weight:800;">GOVLASH Laundry Management System</span>
 
-📌 Project Information
+<p style="font-size:15px; color:#555; max-width:700px;">
+A JavaFX-based laundry management system with role-based access control, transaction tracking, and MySQL database integration.
+</p>
 
-Application Name: GOVLASH Laundry System
-Type: Desktop Application
-Architecture: Model-View-Controller (MVC)
+<img src="assets/logo.png" width="160" alt="GOVLASH Logo" />
 
-👥 Team Members
+<br/><br/>
 
-Christopher Bryan Surya Handoko – 2702255691
+<img src="https://img.shields.io/badge/Java-JDK%2011+-orange" />
+<img src="https://img.shields.io/badge/JavaFX-Desktop%20UI-blue" />
+<img src="https://img.shields.io/badge/MySQL-8.0+-blue" />
+<img src="https://img.shields.io/badge/Architecture-MVC-success" />
 
-Galih Ilham Nanwiprastama – 2702351374
+</div>
 
-Kevin Jesse Tiofan – 2702354590
+---
 
+## ✨ Project Information
+
+<p>
+<strong>Application Type:</strong> Desktop Application<br/>
+<strong>Architecture:</strong> Model-View-Controller (MVC)
+</p>
+
+### 👥 Team Members
+<p>
+Christopher Bryan Surya Handoko – 2702255691<br/>
+Galih Ilham Nanwiprastama – 2702351374<br/>
+Kevin Jesse Tiofan – 2702354590<br/>
 Kevin Sealtiel Matthew Eddy – 2702255256
+</p>
 
-📖 1. Introduction
-🖼️ Application Preview
+---
 
-(Screenshots of the GOVLASH Laundry System interface)
+## 📖 1. Introduction
 
-1.1 Overview
+<p style="line-height:1.6;">
+GOVLASH is a comprehensive laundry management system developed using <strong>JavaFX</strong> and <strong>MySQL</strong>.
+The application is designed to streamline laundry service operations through structured workflows,
+intuitive user interfaces, and role-based access control.
+</p>
 
-GOVLASH is a comprehensive laundry management system developed using JavaFX and MySQL. The application is designed to streamline laundry service operations through an intuitive user interface, structured workflows, and role-based access control for different user types.
+### 🌟 Key Features
+<ul>
+  <li>Multi-role system (Customer, Admin, Receptionist, Laundry Staff)</li>
+  <li>Transaction management with real-time status tracking</li>
+  <li>Dynamic service catalog and pricing</li>
+  <li>Staff assignment and workflow automation</li>
+  <li>Integrated notification system</li>
+</ul>
 
-1.2 Key Features
+---
 
-Multi-role system (Customer, Admin, Receptionist, Laundry Staff)
+## 🖼️ Application Preview
 
-Transaction management with real-time status tracking
+<div align="center">
+  <img src="assets/login.png" width="600" />
+  <br/>
+  <em>Login & Registration Interface</em>
+</div>
 
-Service catalog with dynamic pricing
+<br/>
 
-Staff assignment and workflow automation
+<div align="center">
+  <img src="assets/dashboard.png" width="600" />
+  <br/>
+  <em>Role-Based Dashboard View</em>
+</div>
 
-Notification system for transaction updates
-
-🛠️ 2. Technology Stack
-
-The GOVLASH system is built using stable and industry-relevant technologies suitable for desktop-based enterprise applications.
+---
 
 ## 🛠️ 2. Technology Stack
 
-<p>
-<strong>Frontend:</strong> JavaFX is used to build the graphical user interface, providing a responsive and user-friendly desktop experience.
+<p><strong>Frontend:</strong> JavaFX for building responsive desktop user interfaces.</p>
+<p><strong>Programming Language:</strong> Java (JDK 11+) ensuring object-oriented and cross-platform development.</p>
+<p><strong>Database:</strong> MySQL 8.0+ for structured and reliable data storage.</p>
+<p><strong>Connectivity:</strong> MySQL Connector/J (JDBC) for database communication.</p>
+<p><strong>Architecture:</strong> Model-View-Controller (MVC) for separation of concerns.</p>
+
+---
+
+## 🧩 3. System Architecture
+
+<div align="center">
+  <img src="assets/mvc-diagram.png" width="650" />
+  <br/>
+  <em>Model-View-Controller Architecture</em>
+</div>
+
+<p style="line-height:1.6;">
+The MVC architecture separates the system into Model, View, and Controller layers,
+improving maintainability, scalability, and code organization.
 </p>
 
-<p>
-<strong>Programming Language:</strong> Java (JDK 11 or higher) is used as the core programming language to ensure stability, object-oriented design, and cross-platform compatibility.
+---
+
+## 🗄️ 4. Database Schema
+
+<div align="center">
+  <img src="assets/erd.png" width="650" />
+  <br/>
+  <em>Entity Relationship Diagram (ERD)</em>
+</div>
+
+<p style="line-height:1.6;">
+The database schema supports user authentication, service management,
+transaction processing, and role-based workflows.
 </p>
 
-<p>
-<strong>Database:</strong> MySQL 8.0+ is utilized as the relational database management system to store user data, transactions, services, and system logs.
-</p>
+---
 
-<p>
-<strong>Database Connectivity:</strong> MySQL Connector/J is used to enable communication between the Java application and the MySQL database via JDBC.
-</p>
+## ⚙️ 5. Installation Guide
 
-<p>
-<strong>Architecture Pattern:</strong> The application follows the Model-View-Controller (MVC) architecture to separate business logic, user interface, and data handling, improving maintainability and scalability.
-</p>
+### Prerequisites
+<ul>
+  <li>JDK 11 or higher</li>
+  <li>MySQL Server 8.0+</li>
+  <li>JavaFX SDK</li>
+  <li>MySQL Connector/J</li>
+</ul>
 
-🧩 3. System Architecture
-3.1 MVC Pattern
-Model Layer
+### Setup Steps
+<ol>
+  <li>Start XAMPP and enable MySQL</li>
+  <li>Create database <code>govlash_database</code> using phpMyAdmin</li>
+  <li>Import the provided SQL scripts</li>
+  <li>Configure JavaFX and JDBC in your IDE</li>
+  <li>Run <code>Main.java</code></li>
+</ol>
 
-UserModel – User authentication and role management
+---
 
-ServiceModel – Laundry service catalog operations
+## 📁 Project Structure
 
-TransactionModel – Transaction lifecycle handling
-
-NotificationModel – System notifications
-
-View Layer
-
-LoginView & RegisterView – User authentication interfaces
-
-CustomerView – Customer dashboard and order management
-
-AdminView – Service and employee management
-
-ReceptionistView – Transaction processing interface
-
-StaffView – Laundry staff task dashboard
-
-Controller Layer
-
-Controllers act as intermediaries between Models and Views, handling business logic, validation, and role-based workflows. Each user role is supported by a dedicated controller.
-
-3.2 Database Connection
-
-Database Name: govlash_database
-
-Host: localhost:3306
-
-Username: root
-
-Password: (empty – default XAMPP setup)
-
-🗄️ 4. Database Schema
-4.1 Users Table
-Column Name	Type	Description
-UserID	INT, PK, AI	Primary Key
-UserName	VARCHAR(50)	Unique username
-UserEmail	VARCHAR(100)	User email
-UserPassword	VARCHAR(255)	Encrypted password
-UserGender	VARCHAR(10)	Male / Female
-UserDOB	VARCHAR(20)	Date of birth
-UserRole	VARCHAR(50)	Customer / Admin / Receptionist / Laundry Staff
-⚙️ 5. Installation Guide
-5.1 Prerequisites
-
-JDK 11 or higher
-
-MySQL Server 8.0+
-
-JavaFX SDK
-
-MySQL Connector/J
-
-5.2 Database Setup
-
-Start XAMPP and enable MySQL
-
-Open phpMyAdmin
-
-Create a database named govlash_database
-
-Execute the provided SQL scripts
-
-5.3 Application Setup
-
-Extract the project files
-
-Import the project into your IDE (IntelliJ / NetBeans / Eclipse)
-
-Add JavaFX SDK and MySQL Connector/J to project libraries
-
-Run Main.java
-
-👤 6. User Roles & Features
-6.1 Customer
-
-Create new laundry transactions
-
-View transaction history
-
-Receive real-time notifications
-
-6.2 Admin
-
-Manage laundry services
-
-Manage employee data
-
-Monitor all transactions
-
-6.3 Receptionist
-
-View pending transactions
-
-Assign laundry staff
-
-Update transaction status
-
-6.4 Laundry Staff
-
-View assigned tasks
-
-Mark laundry as completed
-
-🚀 7. Usage Guide
-7.1 Customer
-
-Register an account
-
-Log in
-
-Place a laundry order
-
-7.2 Admin
-
-Manage services, staff, and monitor reports
-
-7.3 Receptionist
-
-Assign transactions and manage workflow
-
-7.4 Laundry Staff
-
-Complete assigned laundry tasks
-
-📁 Project Structure
+```text
 GOVLASH/
 ├── src/
 │   ├── controller/
@@ -211,10 +151,3 @@ GOVLASH/
 │   └── erd.png
 ├── README.md
 └── govlash_database.sql
-📄 License
-
-This project is developed for academic purposes.
-
-📬 Contact
-
-For questions or further development, please contact the project contributors.
