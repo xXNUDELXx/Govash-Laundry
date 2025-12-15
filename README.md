@@ -19,6 +19,10 @@ Kevin Jesse Tiofan – 2702354590
 Kevin Sealtiel Matthew Eddy – 2702255256
 
 📖 1. Introduction
+🖼️ Application Preview
+
+(Screenshots of the GOVLASH Laundry System interface)
+
 1.1 Overview
 
 GOVLASH is a comprehensive laundry management system developed using JavaFX and MySQL. The application is designed to streamline laundry service operations through an intuitive user interface, structured workflows, and role-based access control for different user types.
@@ -36,6 +40,9 @@ Staff assignment and workflow automation
 Notification system for transaction updates
 
 🛠️ 2. Technology Stack
+
+The GOVLASH system is built using stable and industry-relevant technologies suitable for desktop-based enterprise applications.
+
 Component	Technology
 Frontend	JavaFX
 Language	Java (JDK 11+)
@@ -173,6 +180,21 @@ Assign transactions and manage workflow
 
 Complete assigned laundry tasks
 
+📁 Project Structure
+GOVLASH/
+├── src/
+│   ├── controller/
+│   ├── model/
+│   ├── view/
+│   └── Main.java
+├── assets/
+│   ├── logo.png
+│   ├── login.png
+│   ├── dashboard.png
+│   ├── mvc-diagram.png
+│   └── erd.png
+├── README.md
+└── govlash_database.sql
 📄 License
 
 This project is developed for academic purposes.
