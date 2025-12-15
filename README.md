@@ -43,12 +43,28 @@ Notification system for transaction updates
 
 The GOVLASH system is built using stable and industry-relevant technologies suitable for desktop-based enterprise applications.
 
-Component	Technology
-Frontend	JavaFX
-Language	Java (JDK 11+)
-Database	MySQL 8.0+ (XAMPP)
-Database Driver	MySQL Connector/J
-Architecture	MVC (Model-View-Controller)
+## 🛠️ 2. Technology Stack
+
+<p>
+<strong>Frontend:</strong> JavaFX is used to build the graphical user interface, providing a responsive and user-friendly desktop experience.
+</p>
+
+<p>
+<strong>Programming Language:</strong> Java (JDK 11 or higher) is used as the core programming language to ensure stability, object-oriented design, and cross-platform compatibility.
+</p>
+
+<p>
+<strong>Database:</strong> MySQL 8.0+ is utilized as the relational database management system to store user data, transactions, services, and system logs.
+</p>
+
+<p>
+<strong>Database Connectivity:</strong> MySQL Connector/J is used to enable communication between the Java application and the MySQL database via JDBC.
+</p>
+
+<p>
+<strong>Architecture Pattern:</strong> The application follows the Model-View-Controller (MVC) architecture to separate business logic, user interface, and data handling, improving maintainability and scalability.
+</p>
+
 🧩 3. System Architecture
 3.1 MVC Pattern
 Model Layer
